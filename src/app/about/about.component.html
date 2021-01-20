@@ -1,0 +1,11 @@
+<form>
+    <label>Name : </label>
+    <input type="text" name="fullName" [(ngModel)] = "fullName" (keyup) = "myKeyUp()">
+    <button (click)="doSave()">Save</button>
+    {{fullName}}<br>
+    <label>Salary : </label>
+    <input type="text" name="salary" [(ngModel)] = "salary">
+    {{salary | number}}
+</form>
+
+
